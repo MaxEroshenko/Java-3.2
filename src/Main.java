@@ -3,7 +3,8 @@ public class Main {
         long replenishmentAmount = 1500;
         int present = 100;
         long bonus = replenishmentAmount * present / 100 / 100;
-        if (replenishmentAmount >= 1000)
+        long limit = 1000;
+        if (replenishmentAmount >= limit)
         System.out.println(bonus);
     }
 }
