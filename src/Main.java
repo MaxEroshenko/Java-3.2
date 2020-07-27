@@ -4,7 +4,10 @@ public class Main {
         int present = 100;
         long bonus = replenishmentAmount * present / 100 / 100;
         long limit = 1000;
-        if (replenishmentAmount >= limit)
-        System.out.println(bonus);
+        if (replenishmentAmount >= limit) {
+        } else {
+            bonus = 0;
+        }
+            System.out.println(bonus);
     }
-}
+    }
