@@ -1,13 +1,13 @@
 public class Main {
-    public static void main (String[] args) {
-        long replenishmentAmount = 1500;
-        int present = 100;
-        long bonus = replenishmentAmount * present / 100 / 100;
+    public static void main(String[] args) {
+        long deceivingSum = 100;
+        long replenishmentAmount = 1200;
         long limit = 1000;
-        if (replenishmentAmount >= limit) {
-        } else {
-            bonus = 0;
-        }
-            System.out.println(bonus);
+        long bonus = 0;
+        if (replenishmentAmount >= limit)
+            bonus = replenishmentAmount / 100;
+        long totalAmount = deceivingSum + replenishmentAmount + bonus;
+        System.out.println(" Бонус " + bonus);
+        System.out.println(" Итоговая сумма " + totalAmount);
     }
-    }
+}
